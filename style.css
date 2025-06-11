@@ -1,0 +1,16 @@
+#Calculator {
+    background-color: #242530;
+}
+
+button{
+    background-color:#404258;
+    font-family: ;
+    color: #FFFFFF;
+    height: 52px;
+    width: 79px;
+}
+
+#display{
+    height: 70px;
+    width: 350px;
+}
