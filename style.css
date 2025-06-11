@@ -1,12 +1,26 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #Calculator {
     background-color: #242530;
     font-family: inter, sans-serif;
     max-width: 400px;
+    height: 367px;
     overflow: hidden;
+    padding: 10px;
 }
 
 #display{
-    width: 100%;
+    width: 350px;
+    background-color: #3A3F77;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 4, 4, 0);
 }
 
 button{
@@ -31,6 +45,6 @@ button{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 
