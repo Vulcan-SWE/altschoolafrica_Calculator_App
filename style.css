@@ -1,11 +1,18 @@
 #Calculator {
     background-color: #242530;
-    font font-family: inter, sans-serif;
+    font-family: inter, sans-serif;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
 }
 
 button{
     background-color:#404258;
     border: none;
+    border-radius: 70px;
     color: #FFFFFF;
     cursor: pointer;
     font-family: inter, sans-serif;
@@ -13,12 +20,17 @@ button{
     width: 79px;
 }
 
-#display{
-    height: 70px;
-    width: 350px;
+.orange{
+    background-color:#F49D1A;
+    height: 45px;
+    width: 45px;
 }
+
 
 #keys{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 5px;
 }
+
