@@ -1,11 +1,14 @@
 #Calculator {
     background-color: #242530;
+    font font-family: inter, sans-serif;
 }
 
 button{
     background-color:#404258;
-    font-family: ;
+    border: none;
     color: #FFFFFF;
+    cursor: pointer;
+    font-family: inter, sans-serif;
     height: 52px;
     width: 79px;
 }
