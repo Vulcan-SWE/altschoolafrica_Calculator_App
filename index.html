@@ -8,13 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--The head section contains links added to link our css file externally and the google fonts used -->
 </head>
 <body>
-    <div id="Calculator">
-        <input id="display" readonly>
-        <div id="keys">
+    <!--This is the html structure for the full web app calculator -->
 
-            <!--The html structure for the buttons of the web app calculator -->
+    <div id="Calculator">  <!--This div with the id="Calculator" was used to embody other sections of the code-->
+
+        <input id="display" readonly> <!--The attribute of readonly was used on the input HTML tag/element in order not to allow users type in words or anyother keys from their traditonal keyboard/keypa-->
+
+        <div id="keys"> <!-- This particular div element with id="Keys" was used inside its parent div with the id="Calculator" in other to enable us set the display: grid; property on the buttons-->
+
+            
+            <!--
+            This section contains the buttons with attributes set to onclick to help call the JavaScript functions that will be
+            addeded as the value of the attribute onlcick. Some button contained classes, for example class=orange which was used in 
+            Styling them.
+            -->
 
             <button onclick="appendToDisplay('1')">1</button>
             <button onclick="appendToDisplay('2')">2</button>
@@ -33,7 +43,7 @@
             <button class="orange"onclick="appendToDisplay('**')">^</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="clearDisplay()">C</button>
+            <button onclick="clearDisplay()"> <img src="./assets/image 1.svg"> </button>
             <button class="equal" onclick="calculate()">=</button>
             
 

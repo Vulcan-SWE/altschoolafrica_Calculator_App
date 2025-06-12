@@ -1,29 +1,51 @@
+/*This is The css file used for styling the Calculator web app*/
+
+/*The properties are arranged in alphabetical order*/
+
+
+
+/*This section was used in setting the entire body of the web app to be at the vertical and horizontal centre of the display*/
 body{
-    margin: 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     height: 100vh;
+    justify-content: center;
+    margin: 0;
 }
 
+/*This section was used to target the id=Calculator for styling*/
 #Calculator {
     background-color: #242530;
     font-family: inter, sans-serif;
-    max-width: 400px;
+    font-size: xx-large;
+    font-weight: bolder;
     max-height: 367px;
+    max-width: 400px;
     overflow: hidden;
+    padding: 20px;
+}
+
+/*This section was used to target the id="display" for styling*/
+/*The display section of the web app calculator is the area where all inputs and outputs are being displayed to the user*/
+#display{
+    background-color: #3A3F77;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 2em;
+    height: 70px;
+    width: 350px;
+}
+
+/*This div with id="Keys" was used to set the button to grid display*/
+#keys{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
     padding: 10px;
 }
 
-#display{
-    width: 350px;
-    background-color: #3A3F77;
-    height: 70px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 4, 4, 0);
-    font-size: 2em;
-}
-
+/*This was used to style button element/tag of the web app Calculator*/
 button{
     background-color:#404258;
     border: none;
@@ -31,29 +53,29 @@ button{
     color: #FFFFFF;
     cursor: pointer;
     font-family: inter, sans-serif;
+    font-size: 1.5rem;
     height: 52px;
     width: 65px;
 }
 
+/*This class="orange" in some button elemens/tags was used to style the buttons in Orange colour*/
 .orange{
+    align-self: center;
     background-color:#F49D1A;
     height: 45px;
-    width: 45px;
     justify-self: center;
-    align-self: center;
+    width: 45px;   
 }
 
-
-#keys{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-    padding: 10px;
-}
-
+/*This section of the css file was used to style the class="equal" in the last button element/tag*/
 .equal{
     background-color: #B2B2B2;
+    font-weight: 500;
+    font-size: 2rem;
     grid-column: span 2;
-    width: 100%;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
 
 }
+
