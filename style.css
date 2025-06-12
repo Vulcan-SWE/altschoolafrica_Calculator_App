@@ -10,7 +10,7 @@ body{
     background-color: #242530;
     font-family: inter, sans-serif;
     max-width: 400px;
-    height: 367px;
+    max-height: 367px;
     overflow: hidden;
     padding: 10px;
 }
@@ -21,6 +21,7 @@ body{
     height: 70px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 4, 4, 0);
+    font-size: 2em;
 }
 
 button{
@@ -31,20 +32,28 @@ button{
     cursor: pointer;
     font-family: inter, sans-serif;
     height: 52px;
-    width: 79px;
+    width: 65px;
 }
 
 .orange{
     background-color:#F49D1A;
     height: 45px;
     width: 45px;
+    justify-self: center;
+    align-self: center;
 }
 
 
 #keys{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
 }
 
+.equal{
+    background-color: #B2B2B2;
+    grid-column: span 2;
+    width: 100%;
+
+}
