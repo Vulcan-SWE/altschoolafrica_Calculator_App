@@ -105,6 +105,7 @@ button:active{
 /* Mobile styles for screens 600px and below */
 @media screen and (max-width: 600px) {
   body {
+    display: flex;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -114,7 +115,7 @@ button:active{
     width: 100%;
     max-width: 350px;
     margin: 30px auto;
-    padding: 15px;
+    padding: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 15px;
     background: #242530;
@@ -122,9 +123,9 @@ button:active{
 
   #display {
     width: 100%;
-    height: 60px;
-    font-size: 1.8rem;
-    padding: 10px;
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 5px;
     border-radius: 10px;
     margin-bottom: 15px;
   }
@@ -132,12 +133,12 @@ button:active{
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
 
   button {
-    padding: 20px;
-    font-size: 1.4rem;
+    padding: 10px;
+    font-size: 1rem;
     border-radius: 12px;
     background: #242530;
     border: none;
@@ -150,7 +151,7 @@ button:active{
   }
 
   .equal {
-    grid-column: span 2;
+    grid-column: span 1;
     background: #ff9800;
     color: white;
   }
