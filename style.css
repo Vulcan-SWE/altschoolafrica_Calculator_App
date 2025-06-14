@@ -63,6 +63,12 @@ button:hover{
     background-color: #474b77;
 }
 
+/*Changes the color of the button when an action is being carried on it such as click or hold and reduces the size by 10%*/
+button:active{
+    background-color:#474b79;
+    transform: scale(0.90);
+}
+
 /*This class="orange" in some button elemens/tags was used to style the buttons in Orange colour*/
 .orange{
     align-self: center;
@@ -72,6 +78,16 @@ button:hover{
     width: 45px;   
 }
 
+
+/*This changes the operator buttons with class="orange" when an action is being carried out on it such as click or hold*/
+.orange:active{
+    background-color: #fec267;
+}
+
+/*This changes the colour such of the operator button with class="orange "when it being hovered over*/
+.orange:hover{
+    background-color: #fec268;
+}
 /*This section of the css file was used to style the class="equal" in the last button element/tag*/
 .equal{
     background-color: #B2B2B2;
