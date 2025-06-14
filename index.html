@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <!--The head section contains links added to link our css file externally and the google fonts used -->
+    <script src="./index.js" defer> </script>
+    <!--The head section contains links added to link our css, javascript file externally and the google fonts used -->
 </head>
 <body>
     <!--This is the html structure for the full web app calculator -->
@@ -43,8 +44,9 @@
             <button class="orange"onclick="appendToDisplay('**')">^</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="clearDisplay()"> <img src="./assets/image 1.svg"> </button>
+            <button onclick="deleteOneOnDisplay()"> <img src="./assets/image 1.svg"> </button>
             <button class="equal" onclick="calculate()">=</button>
+            <button onclick="wipeDisplay()">C</button>
             
 
         </div>

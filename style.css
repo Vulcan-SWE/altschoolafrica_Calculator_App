@@ -32,7 +32,8 @@ body{
     border: none;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    font-size: 2em;
+    color: #FFFFFF;
+    font-size: 1em;
     height: 70px;
     width: 350px;
 }
@@ -93,10 +94,9 @@ button:active{
     background-color: #B2B2B2;
     font-weight: 500;
     font-size: 2rem;
-    grid-column: span 2;
+    grid-column: span 1;
     justify-self: center;
     align-self: center;
     width: 90%;
-
 }
 
