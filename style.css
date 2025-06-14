@@ -58,6 +58,11 @@ button{
     width: 65px;
 }
 
+/*Changes the color of the button when the mouse is hovered over or on the a button*/
+button:hover{
+    background-color: #474b77;
+}
+
 /*This class="orange" in some button elemens/tags was used to style the buttons in Orange colour*/
 .orange{
     align-self: center;
