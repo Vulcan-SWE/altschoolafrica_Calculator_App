@@ -2,6 +2,12 @@
 
 /*The properties are arranged in alphabetical order*/
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 /*This section was used in setting the entire body of the web app to be at the vertical and horizontal centre of the display*/
@@ -23,6 +29,7 @@ body{
     min-width: 200px;
     overflow: hidden;
     padding: 20px;
+    text-align: center;
 }
 
 /*This section was used to target the id="display" for styling*/
@@ -103,6 +110,7 @@ button:active{
 }
 
 /* Mobile styles for screens 600px and below */
+
 @media screen and (max-width: 600px) {
   body {
     display: flex;
@@ -111,14 +119,15 @@ button:active{
     padding: 0;
   }
 
-  .calculator {
-    width: 100%;
+  #calculator {
+    background: #242530;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 350px;
     margin: 30px auto;
     padding: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 15px;
-    background: #242530;
+    width: 100%;
+    overflow: hidden;
   }
 
   #display {
@@ -128,6 +137,7 @@ button:active{
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 15px;
+    text-align: right;
   }
 
   .buttons {
