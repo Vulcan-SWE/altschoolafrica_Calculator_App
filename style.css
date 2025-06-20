@@ -23,7 +23,7 @@ body{
 #Calculator {
     background-color: #242530;
     font-family: inter, sans-serif;
-    max-height: 367px;
+    max-height: 400px;
     max-width: 400px;
     min-height: 200px;
     min-width: 200px;
@@ -45,6 +45,27 @@ body{
     padding: 10px;
     text-align: right;
     width: 350px;
+}
+
+/*This section was used to target the id="history" for styling*/
+#history button {
+    background-color: rgba(222, 218, 213, 0.2); /* faint color */
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;         
+    font-size: 1rem;         
+    height: 30px;         
+    margin-top: 10px;         
+    width: 30px;               
+    cursor: pointer;
+    text-align: center;
+    text-justify: center;
+    transition: all 0.2s ease;
+}
+
+/*This section was used to target the id="history" for hover styling*/
+#history button:hover {
+    background-color: rgba(222, 218, 213, 0.4); /* slightly darker on hover */
 }
 
 /*This div with id="Keys" was used to set the button to grid display*/
@@ -104,6 +125,18 @@ button:active{
     background-color: #B2B2B2;
     font-weight: 500;
     font-size: 2rem;
+    grid-column: span 1;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+}
+
+
+/*This section contains the codes written for the clear button of the web-application calculator*/
+#clear{
+    background-color: #ce0808;
+    font-weight: 500;
+    font-size: 1.5rem;
     grid-column: span 1;
     justify-self: center;
     align-self: center;

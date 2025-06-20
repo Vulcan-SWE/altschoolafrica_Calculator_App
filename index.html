@@ -17,6 +17,11 @@
     <div id="Calculator">  <!--This div with the id="Calculator" was used to embody other sections of the code-->
 
         <input id="display" readonly> <!--The attribute of readonly was used on the input HTML tag/element in order not to allow users type in words or anyother keys from their traditonal keyboard/keypa-->
+        
+        <div id="history"> <!--This div with the id="history" was used to display the history of the calculations done by the user-->
+            <button> < </button>
+            <button> > </button> 
+        </div>
 
         <div id="keys"> <!-- This particular div element with id="Keys" was used inside its parent div with the id="Calculator" in other to enable us set the display: grid; property on the buttons-->
 
@@ -46,7 +51,7 @@
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="deleteOneOnDisplay()"> <img src="./assets/image 1.svg"> </button>
             <button class="equal" onclick="calculate()">=</button>
-            <button onclick="wipeDisplay()">C</button>
+            <button id="clear" onclick="wipeDisplay()">C</button>
             
 
         </div>
