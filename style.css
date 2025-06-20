@@ -59,7 +59,6 @@ body{
     width: 30px;               
     cursor: pointer;
     text-align: center;
-    text-justify: center;
     transition: all 0.2s ease;
 }
 
@@ -172,6 +171,26 @@ button:active{
     border-radius: 10px;
     margin-bottom: 15px;
     text-align: right;
+  }
+
+  #history {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  #history button {
+    width: 25px;
+    height: 25px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
   }
 
   .buttons {
